@@ -399,3 +399,15 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .anim .tabpanel.swap .tp-body > *:nth-child(2) { animation-delay: .06s; }
 .anim .tabpanel.swap .tp-body > *:nth-child(3) { animation-delay: .12s; }
 @keyframes tpImg { from { transform: scale(1.12); opacity: .4; } to { transform: none; opacity: 1; } }
+
+/* Tarjetas de servicios (equipos) */
+.svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.svc-card { display: flex; flex-direction: column; border-radius: 22px; overflow: hidden; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; transition: transform .45s var(--ease), box-shadow .45s, border-color .45s; }
+.svc-card .im { position: relative; aspect-ratio: 16 / 11; overflow: hidden; }
+.svc-card .im img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.svc-card .im .x-n { top: 16px; left: 16px; }
+.svc-card .bd { padding: 24px; display: grid; gap: 10px; flex: 1; align-content: start; }
+.svc-card h3 { font-size: 1.3rem; font-weight: 600; }
+.svc-card p { font-size: .97rem; color: var(--text); }
+.svc-card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -26px rgba(10,42,79,.45); border-color: var(--sky-line); }
+.svc-card:hover .im img { transform: scale(1.07); }
