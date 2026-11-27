@@ -105,3 +105,36 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .btn-ghost:hover { background: #fff; border-color: var(--sky-line); color: var(--blue); }
 .btn-white { background: #fff; color: var(--navy); }
 .btn-white:hover { color: var(--blue); }
+
+/* --------------------------------------------------------------------------
+   Intro: el logo se dibuja trazo por trazo y da paso a la portada al bajar
+   -------------------------------------------------------------------------- */
+.intro { position: relative; height: 155svh; background: #fff; }
+.intro-stage { position: sticky; top: 0; height: 100svh; display: grid; place-items: center; overflow: hidden; }
+.intro-inner { display: flex; flex-direction: column; align-items: center; gap: 26px; will-change: transform, opacity; }
+.intro-logo { width: min(300px, 58vw); height: auto; overflow: visible; }
+.intro-logo .lg-s { fill: none; stroke: var(--blue); stroke-width: .7; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
+.intro-logo .lg-f { fill: var(--blue); }
+.intro-tag { font: 600 .82rem/1 var(--font-display); letter-spacing: .3em; text-transform: uppercase; color: var(--navy); display: flex; align-items: center; gap: 12px; }
+.intro-tag i { width: 5px; height: 5px; border-radius: 50%; background: var(--aqua); }
+.intro-bar { width: 132px; height: 2px; border-radius: 2px; background: var(--sky-soft); overflow: hidden; }
+.intro-bar i { display: block; height: 100%; width: 100%; background: var(--grad); transform-origin: left; }
+.intro-hint { position: absolute; left: 50%; bottom: max(28px, env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); display: grid; justify-items: center; gap: 10px; font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+.intro-hint span { width: 24px; height: 38px; border-radius: 14px; border: 2px solid rgba(10,42,79,.25); position: relative; }
+.intro-hint span::after { content: ""; position: absolute; left: 50%; top: 7px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--blue); }
+.intro-glow { position: absolute; inset: -20%; z-index: -1; background: radial-gradient(40% 35% at 50% 45%, rgba(18,163,201,.12), rgba(18,163,201,0) 70%); pointer-events: none; }
+
+/* Animación de dibujo (solo con JS y sin "reducir movimiento") */
+.anim .intro-logo .lg-s { stroke-dashoffset: 1; animation: draw 1.9s cubic-bezier(.65,0,.35,1) forwards; animation-delay: calc(var(--i, 0) * .14s); }
+.anim .intro-logo .lg-f { opacity: 0; animation: fillIn .9s ease 1.75s forwards; }
+.anim .intro-logo .lg-strokes { animation: strokesOut .9s ease 2.1s forwards; }
+.anim .intro-tag { opacity: 0; transform: translateY(10px); animation: fadeUp .7s var(--ease) 1.9s forwards; }
+.anim .intro-bar i { transform: scaleX(0); animation: barFill 2.6s cubic-bezier(.4,0,.2,1) .2s forwards; }
+.anim .intro-hint > * { opacity: 0; animation: fadeIn .8s ease 2.6s forwards; }
+.anim .intro-hint span::after { animation: wheel 1.8s ease-in-out 3s infinite; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes fillIn { to { opacity: 1; } }
+@keyframes strokesOut { to { opacity: 0; } }
+@keyframes barFill { to { transform: scaleX(1); } }
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes wheel { 0% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(12px); opacity: 0; } 100% { transform: translateY(0); opacity: 0; } }
