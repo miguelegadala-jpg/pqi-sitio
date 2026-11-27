@@ -1,0 +1,290 @@
+[
+ {
+  "id": "hoteles",
+  "sector": "Hotelería",
+  "es": [
+   "Hoteles y hospitalidad",
+   "Soluciones integrales de higiene, limpieza y sanitización diseñadas para los más altos estándares de calidad, seguridad e inocuidad de la hotelería. Optimizan los procesos de limpieza, protegen la salud de huéspedes y colaboradores y prolongan la vida útil de las instalaciones."
+  ],
+  "en": [
+   "Hotels and hospitality",
+   "Comprehensive hygiene, cleaning and sanitation solutions built for the highest quality, safety and food-safety standards in hospitality. They streamline cleaning processes, protect the health of guests and staff, and extend the life of your facilities."
+  ],
+  "alt": [
+   "Habitación de hotel limpia y ordenada",
+   "Clean, tidy hotel room"
+  ],
+  "sym": "Ho",
+  "group": "inst"
+ },
+ {
+  "id": "hospitales",
+  "sector": "Salud",
+  "es": [
+   "Hospitales y clínicas",
+   "Protocolos rigurosos, productos de alto desempeño y personal capacitado para mantener ambientes hospitalarios correctamente sanitizados y proteger a pacientes, profesionales de la salud y visitantes."
+  ],
+  "en": [
+   "Hospitals and clinics",
+   "Rigorous protocols, high-performance products and trained staff to keep hospital environments properly sanitized and protect patients, healthcare professionals and visitors."
+  ],
+  "alt": [
+   "Pasillo de hospital",
+   "Hospital hallway"
+  ],
+  "sym": "Hs",
+  "group": "inst"
+ },
+ {
+  "id": "textil",
+  "sector": "Hotelería",
+  "es": [
+   "Cuidado textil",
+   "Soluciones para lavado comercial, industrial y hospitalario que optimizan cada etapa del proceso de lavado, mejoran el desempeño operativo y contribuyen a reducir costos."
+  ],
+  "en": [
+   "Textile care",
+   "Solutions for commercial, industrial and hospital laundries that optimize every stage of the wash process, improve operating performance and help reduce costs."
+  ],
+  "alt": [
+   "Lavandería comercial",
+   "Commercial laundry"
+  ],
+  "sym": "Tx",
+  "group": "inst"
+ },
+ {
+  "id": "restaurantes",
+  "sector": "Alimentos",
+  "es": [
+   "Restaurantes y catering",
+   "Programas integrales de higiene y saneamiento que contribuyen a la inocuidad de los alimentos en cada etapa, desde su origen hasta el punto de consumo, para proteger la salud de los consumidores y la reputación de su organización."
+  ],
+  "en": [
+   "Restaurants and catering",
+   "Comprehensive hygiene and sanitation programs that support food safety at every stage, from source to point of consumption, protecting consumers' health and your organization's reputation."
+  ],
+  "alt": [
+   "Cocina profesional",
+   "Professional kitchen"
+  ],
+  "sym": "Rc",
+  "group": "inst"
+ },
+ {
+  "id": "facilidades",
+  "sector": "Otro",
+  "es": [
+   "Mantenimiento de instalaciones",
+   "Programas integrales de limpieza y mantenimiento que combinan alto desempeño, facilidad de implementación y un uso responsable de los recursos."
+  ],
+  "en": [
+   "Facility maintenance",
+   "Comprehensive cleaning and maintenance programs that combine high performance, easy implementation and responsible use of resources."
+  ],
+  "alt": [
+   "Limpieza de instalaciones",
+   "Facility cleaning"
+  ],
+  "sym": "Mi",
+  "group": "inst"
+ },
+ {
+  "id": "aguas-recreativas",
+  "sector": "Hotelería",
+  "es": [
+   "Aguas recreativas y potabilización",
+   "Programas personalizados para piscinas, redes de agua potable y otras aplicaciones, que garantizan condiciones sanitarias óptimas, protegen la salud de los usuarios y aseguran un desempeño eficiente de los sistemas."
+  ],
+  "en": [
+   "Recreational and drinking water",
+   "Tailored programs for pools, drinking water networks and other applications that ensure optimal sanitary conditions, protect users' health and keep systems running efficiently."
+  ],
+  "alt": [
+   "Piscina con agua tratada",
+   "Pool with treated water"
+  ],
+  "sym": "Aq",
+  "group": "inst"
+ },
+ {
+  "id": "alimentos",
+  "sector": "Alimentos",
+  "es": [
+   "Industria de alimentos",
+   "Programas integrales de limpieza y sanitización que mantienen equipos, superficies e instalaciones en condiciones óptimas para asegurar la inocuidad de los productos sin comprometer la productividad."
+  ],
+  "en": [
+   "Food industry",
+   "Comprehensive cleaning and sanitation programs that keep equipment, surfaces and facilities in optimal condition to ensure product safety without compromising productivity."
+  ],
+  "alt": [
+   "Línea de producción de alimentos",
+   "Food production line"
+  ],
+  "sym": "Al",
+  "group": "ind"
+ },
+ {
+  "id": "bebidas",
+  "sector": "Bebidas",
+  "es": [
+   "Bebidas",
+   "Soluciones a la medida para procesos seguros, eficientes y de alta calidad, desde la preparación de materias primas hasta la limpieza y el mantenimiento de equipos e instalaciones."
+  ],
+  "en": [
+   "Beverages",
+   "Tailored solutions for safe, efficient, high-quality processes, from raw material preparation to the cleaning and maintenance of equipment and facilities."
+  ],
+  "alt": [
+   "Planta embotelladora de bebidas",
+   "Beverage bottling plant"
+  ],
+  "sym": "Be",
+  "group": "ind"
+ },
+ {
+  "id": "carnicos",
+  "sector": "Alimentos",
+  "es": [
+   "Cárnicos y avícola",
+   "Soluciones que fortalecen la bioseguridad, la higiene y la inocuidad en cada etapa del proceso, con control microbiológico y remoción efectiva de residuos orgánicos."
+  ],
+  "en": [
+   "Meat and poultry",
+   "Solutions that strengthen biosecurity, hygiene and food safety at every stage of the process, with microbiological control and effective removal of organic residues."
+  ],
+  "alt": [
+   "Granja avícola",
+   "Poultry farm"
+  ],
+  "sym": "Ca",
+  "group": "ind"
+ },
+ {
+  "id": "mant-industrial",
+  "sector": "Industria",
+  "es": [
+   "Mantenimiento industrial",
+   "Programas de limpieza, restauración, protección y mantenimiento de activos industriales que mejoran la eficiencia operativa y prolongan la vida útil de los equipos."
+  ],
+  "en": [
+   "Industrial maintenance",
+   "Cleaning, restoration, protection and maintenance programs for industrial assets that improve operating efficiency and extend equipment life."
+  ],
+  "alt": [
+   "Mantenimiento de equipos industriales",
+   "Industrial equipment maintenance"
+  ],
+  "sym": "Mn",
+  "group": "ind"
+ },
+ {
+  "id": "vapor",
+  "sector": "Industria",
+  "es": [
+   "Generación de vapor",
+   "Tratamiento y acondicionamiento del agua para prevenir incrustaciones, corrosión y depósitos en calderas, optimizando la eficiencia térmica y la confiabilidad de sus sistemas de vapor."
+  ],
+  "en": [
+   "Steam generation",
+   "Water treatment and conditioning to prevent scale, corrosion and deposits in boilers, optimizing thermal efficiency and the reliability of your steam systems."
+  ],
+  "alt": [
+   "Caldera industrial",
+   "Industrial boiler"
+  ],
+  "sym": "Va",
+  "group": "ind"
+ },
+ {
+  "id": "enfriamiento",
+  "sector": "Industria",
+  "es": [
+   "Sistemas de enfriamiento",
+   "Programas personalizados para el tratamiento de sistemas de enfriamiento que optimizan el desempeño de los equipos, reducen los costos operativos y promueven el ahorro de agua."
+  ],
+  "en": [
+   "Cooling systems",
+   "Tailored treatment programs for cooling systems that optimize equipment performance, lower operating costs and promote water savings."
+  ],
+  "alt": [
+   "Torre de enfriamiento",
+   "Cooling tower"
+  ],
+  "sym": "Ef",
+  "group": "ind"
+ },
+ {
+  "id": "residuales",
+  "sector": "Industria",
+  "es": [
+   "Tratamiento de aguas residuales",
+   "Soluciones integrales para el tratamiento de efluentes que mejoran el desempeño ambiental, optimizan los recursos y reafirman su compromiso con las comunidades y el entorno."
+  ],
+  "en": [
+   "Wastewater treatment",
+   "Comprehensive effluent treatment solutions that improve environmental performance, optimize resources and reaffirm your commitment to communities and the environment."
+  ],
+  "alt": [
+   "Planta de tratamiento de aguas residuales",
+   "Wastewater treatment plant"
+  ],
+  "sym": "Ar",
+  "group": "ind"
+ },
+ {
+  "id": "control",
+  "sym": "Dc",
+  "group": "eq",
+  "sector": "Industria",
+  "es": [
+   "Control, dosificación y automatización",
+   "Aplicación, dosificación, automatización, control y monitoreo para optimizar el uso de productos químicos y garantizar un desempeño consistente en cada etapa de la operación."
+  ],
+  "en": [
+   "Control, dosing and automation",
+   "Application, dosing, automation, control and monitoring to optimize chemical use and ensure consistent performance at every stage of the operation."
+  ],
+  "alt": [
+   "Equipo de control y monitoreo de procesos",
+   "Process control and monitoring equipment"
+  ]
+ },
+ {
+  "id": "pretratamiento",
+  "sym": "Pt",
+  "group": "eq",
+  "sector": "Industria",
+  "es": [
+   "Pretratamiento de agua",
+   "Diseñamos, proveemos e implementamos sistemas que acondicionan diferentes fuentes de agua para cumplir las especificaciones técnicas de cada proceso industrial."
+  ],
+  "en": [
+   "Water pretreatment",
+   "We design, supply and implement systems that condition different water sources to meet the technical specifications of each industrial process."
+  ],
+  "alt": [
+   "Sistema de tratamiento de agua",
+   "Water treatment system"
+  ]
+ },
+ {
+  "id": "servsafe",
+  "sym": "Ss",
+  "group": "eq",
+  "sector": "Alimentos",
+  "es": [
+   "Certificaciones ServSafe®",
+   "Como instructores autorizados, ofrecemos las capacitaciones ServSafe® de la National Restaurant Association en seguridad e higiene alimentaria."
+  ],
+  "en": [
+   "ServSafe® certifications",
+   "As authorized instructors, we offer the National Restaurant Association's ServSafe® food safety and hygiene training."
+  ],
+  "alt": [
+   "Entrenamiento de PQI",
+   "PQI training session"
+  ]
+ }
+]
