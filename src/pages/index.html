@@ -1,7 +1,6 @@
 <!--{"slug":"index","key":"home","title":"PQI · Productos químicos industriales en Santo Domingo desde 1973","desc":"Soluciones completas de higiene, sanitización, mantenimiento y tratamiento de agua para hoteles, hospitales, industria de alimentos y bebidas. Santo Domingo, desde 1973.","og":"hero-agua","ld":true}-->
 <section class="intro" id="intro" aria-label="PQI, Soluciones completas" data-i-attr="aria-label:a_intro">
   <div class="intro-stage">
-    <div class="intro-glow" aria-hidden="true"></div>
     <div class="intro-inner">
       <svg class="intro-logo" viewBox="0 0 146 137" role="img" aria-label="Logo de PQI" data-i-attr="aria-label:a_logo_svg">
         {{LOGO_PATHS}}
@@ -13,34 +12,36 @@
   </div>
 </section>
 <!--HEADER-->
-<section class="hero live-bg" id="inicio" aria-labelledby="hero-title">
-  <div class="bg-stage" data-rotate="6500" aria-hidden="true">
-    <div class="bg-slide is-on"><img src="img/hero-agua.webp" srcset="img/hero-agua-800.webp 800w, img/hero-agua.webp 1600w" sizes="100vw" alt="" fetchpriority="high"></div>
-    <div class="bg-slide"><img src="img/hero-planta.webp" srcset="img/hero-planta-800.webp 800w, img/hero-planta.webp 1600w" sizes="100vw" alt="" loading="lazy"></div>
-    <div class="bg-slide"><img src="img/hero-tratamiento.webp" srcset="img/hero-tratamiento-800.webp 800w, img/hero-tratamiento.webp 1600w" sizes="100vw" alt="" loading="lazy"></div>
-  </div>
-  <div class="veil veil-light" aria-hidden="true"></div>
-  <div class="container hero-inner">
-    <div class="hero-copy">
-      <span class="kicker" data-i="hero_kicker">Productos químicos industriales · Santo Domingo desde 1973</span>
-      <h1 id="hero-title">
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <canvas class="bubbles" data-bubbles aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="label" data-i="hero_kicker">Productos químicos industriales desde 1973</span>
+      <h1 class="display" id="hero-title">
         <span class="ln"><span data-i="hero_l1">Ambientes más sanos.</span></span>
         <span class="ln"><span data-i="hero_l2">Procesos más eficientes.</span></span>
-        <span class="ln"><span class="grad-text" data-i="hero_l3">Desde 1973.</span></span>
+        <span class="ln"><span class="blue" data-i="hero_l3">Desde 1973.</span></span>
       </h1>
       <p class="lede" data-i="hero_lede">Soluciones integrales para saneamiento, limpieza, mantenimiento y tratamiento de aguas industriales: productos especializados, equipos y asesoría técnica en un solo aliado.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="contacto.html#cotizar"><span data-i="hero_cta1">Solicitar asesoría</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="#explora" data-i="hero_cta2">Ver soluciones</a>
+      <div class="hero-cta">
+        <a class="btn" href="contacto.html#cotizar" data-track="hero_asesoria" data-i="hero_cta1">Solicitar asesoría</a>
+        <a class="go" href="#tabla" data-track="hero_soluciones"><span data-i="hero_cta2">Ver soluciones</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
       </div>
-    </div>
-    <div class="hero-bottom">
-      <dl class="hero-facts">
-        <div><dt class="sr-only" data-i="fact1_l">Años de experiencia</dt><dd style="margin:0"><b data-count="50" data-suf="+">50+</b><span data-i="fact1">años de experiencia</span></dd></div>
-        <div><dt class="sr-only" data-i="fact2_l">Clientes activos</dt><dd style="margin:0"><b data-count="700" data-suf="+">700+</b><span data-i="fact2">clientes activos</span></dd></div>
-        <div><dt class="sr-only" data-i="fact3_l">Mercados de incidencia</dt><dd style="margin:0"><b data-count="50" data-suf="+">50+</b><span data-i="fact3">mercados de incidencia</span></dd></div>
+      <dl class="facts">
+        <div><dt class="sr-only" data-i="fact1_l">Años de experiencia</dt><dd><b data-count="50" data-suf="+">50+</b><span data-i="fact1">años de experiencia</span></dd></div>
+        <div><dt class="sr-only" data-i="fact2_l">Clientes activos</dt><dd><b data-count="700" data-suf="+">700+</b><span data-i="fact2">clientes activos</span></dd></div>
+        <div><dt class="sr-only" data-i="fact3_l">Mercados de incidencia</dt><dd><b data-count="50" data-suf="+">50+</b><span data-i="fact3">mercados de incidencia</span></dd></div>
       </dl>
-      <div class="bg-dots" role="group" aria-label="Fotos de fondo" data-i-attr="aria-label:a_bg">
+    </div>
+    <div class="orb" data-orb>
+      <div class="orb-photo" data-rotate="6000">
+        <img class="is-on" src="img/hero-agua.webp" srcset="img/hero-agua-800.webp 800w, img/hero-agua.webp 1600w" sizes="(max-width: 900px) 76vw, 460px" alt="Agua tratada en movimiento" data-i-attr="alt:alt_h1" fetchpriority="high" width="460" height="460">
+        <img src="img/hero-planta.webp" srcset="img/hero-planta-800.webp 800w, img/hero-planta.webp 1600w" sizes="(max-width: 900px) 76vw, 460px" alt="Planta industrial" data-i-attr="alt:alt_h2" loading="lazy" width="460" height="460">
+        <img src="img/hero-tratamiento.webp" srcset="img/hero-tratamiento-800.webp 800w, img/hero-tratamiento.webp 1600w" sizes="(max-width: 900px) 76vw, 460px" alt="Planta de tratamiento de agua" data-i-attr="alt:alt_h3" loading="lazy" width="460" height="460">
+      </div>
+      <svg class="orb-ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="r1" cx="50" cy="50" r="50" pathLength="314"/></svg>
+      <span class="orb-dot" aria-hidden="true"></span>
+      <div class="orb-count" role="group" aria-label="Fotos" data-i-attr="aria-label:a_bg">
         <button type="button" aria-pressed="true" aria-label="Foto 1" data-i-attr="aria-label:a_ph1"><i></i></button>
         <button type="button" aria-pressed="false" aria-label="Foto 2" data-i-attr="aria-label:a_ph2"><i></i></button>
         <button type="button" aria-pressed="false" aria-label="Foto 3" data-i-attr="aria-label:a_ph3"><i></i></button>
@@ -49,125 +50,120 @@
   </div>
 </section>
 
-<section class="strip" aria-label="Áreas de trabajo" data-i-attr="aria-label:a_areas">
-  <div class="container">
-    <ul class="row" style="list-style:none;margin:0;padding:0">
-      <li class="item rv"><span class="ic" aria-hidden="true"><svg><use href="#i-higiene"/></svg></span><span data-i="strip1">Higiene y sanitización</span></li>
-      <li class="item rv"><span class="ic" aria-hidden="true"><svg><use href="#i-agua"/></svg></span><span data-i="strip2">Tratamiento de agua</span></li>
-      <li class="item rv"><span class="ic" aria-hidden="true"><svg><use href="#i-mant"/></svg></span><span data-i="strip3">Mantenimiento industrial</span></li>
-      <li class="item rv"><span class="ic" aria-hidden="true"><svg><use href="#i-asesoria"/></svg></span><span data-i="strip4">Asesoría técnica</span></li>
-    </ul>
+<section class="sec manifest" aria-labelledby="man-h">
+  <div class="wrap">
+    <h2 class="label" id="man-h" data-i="man_label">Nuestro compromiso</h2>
+    <p data-words><span data-i="man_a">Más que suministrar productos, desarrollamos soluciones que optimizan procesos, reducen costos operativos, preservan recursos y generan</span> <b data-i="man_b">valor sostenible a largo plazo.</b></p>
+    <nav class="ops" aria-label="¿Qué opera usted?" data-i-attr="aria-label:ops_label">
+      <a href="soluciones-institucionales.html#hoteles"><b>Ho</b><span data-i="t_hoteles">Hoteles y hospitalidad</span></a>
+      <a href="soluciones-institucionales.html#hospitales"><b>Hs</b><span data-i="t_hospitales">Hospitales y clínicas</span></a>
+      <a href="soluciones-institucionales.html#restaurantes"><b>Rc</b><span data-i="t_restaurantes">Restaurantes y catering</span></a>
+      <a href="soluciones-industriales.html#alimentos"><b>Al</b><span data-i="t_alimentos">Industria de alimentos</span></a>
+      <a href="soluciones-industriales.html#bebidas"><b>Be</b><span data-i="t_bebidas">Industria de bebidas</span></a>
+      <a href="soluciones-industriales.html#vapor"><b>Va</b><span data-i="t_vapor">Generación de vapor</span></a>
+    </nav>
   </div>
 </section>
 
-<section class="section explore-sec" id="explora" aria-labelledby="explora-title">
-  <div class="container">
-    <div class="section-head rv">
-      <span class="kicker" data-i="ex_kicker">Explora PQI</span>
-      <h2 id="explora-title" data-i="ex_title">Soluciones para quienes cuidan colectividades y entornos industriales.</h2>
-      <p data-i="ex_p">Contribuimos a la preservación de la salud y a la prolongación de la vida de sus bienes.</p>
-    </div>
-    <div class="explore-grid">
-      <a class="x-card big" href="soluciones-institucionales.html">
-        <span class="x-bg"><img src="img/institucionales.webp" srcset="img/institucionales-800.webp 800w, img/institucionales.webp 1600w" sizes="(max-width: 600px) 100vw, 50vw" alt="" loading="lazy"></span>
-        <span class="x-glare" aria-hidden="true"></span>
-        <span class="x-n">01</span>
-        <span class="x-go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-        <span class="x-body"><b data-i="nav_inst_l">Soluciones institucionales</b><small data-i="ex1">Sistemas integrales de higiene y saneamiento para hoteles, hospitales, restaurantes y lavanderías.</small></span>
-      </a>
-      <a class="x-card big" href="soluciones-industriales.html">
-        <span class="x-bg"><img src="img/alimentos.webp" srcset="img/alimentos-800.webp 800w, img/alimentos.webp 1600w" sizes="(max-width: 600px) 100vw, 50vw" alt="" loading="lazy"></span>
-        <span class="x-glare" aria-hidden="true"></span>
-        <span class="x-n">02</span>
-        <span class="x-go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-        <span class="x-body"><b data-i="nav_ind_l">Soluciones industriales</b><small data-i="ex2">Enfocadas a preservar sus activos, su marca y la salud de sus clientes.</small></span>
-      </a>
-      <a class="x-card" href="equipos-y-servicios.html">
-        <span class="x-bg"><img src="img/equipos.webp" srcset="img/equipos-800.webp 800w, img/equipos.webp 1600w" sizes="(max-width: 600px) 100vw, 33vw" alt="" loading="lazy"></span>
-        <span class="x-glare" aria-hidden="true"></span>
-        <span class="x-n">03</span>
-        <span class="x-go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-        <span class="x-body"><b data-i="nav_eq_l">Equipos y servicios</b><small data-i="ex3">Todo lo necesario para el monitoreo y control de sus procesos.</small></span>
-      </a>
-      <a class="x-card" href="sostenibilidad.html">
-        <span class="x-bg"><img src="img/futuro.webp" srcset="img/futuro-800.webp 800w, img/futuro.webp 1600w" sizes="(max-width: 600px) 100vw, 33vw" alt="" loading="lazy"></span>
-        <span class="x-glare" aria-hidden="true"></span>
-        <span class="x-n">04</span>
-        <span class="x-go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-        <span class="x-body"><b data-i="nav_sos">Sostenibilidad</b><small data-i="ex4">Un negocio sostenible a largo plazo: inversión, salud y medio ambiente.</small></span>
-      </a>
-      <a class="x-card" href="conoce-pqi.html">
-        <span class="x-bg"><img src="img/edificio.webp" srcset="img/edificio-800.webp 800w, img/edificio.webp 1600w" sizes="(max-width: 600px) 100vw, 33vw" alt="" loading="lazy"></span>
-        <span class="x-glare" aria-hidden="true"></span>
-        <span class="x-n">05</span>
-        <span class="x-go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-        <span class="x-body"><b data-i="nav_about">Conoce PQI</b><small data-i="ex5">Nuestra historia desde 1973, cultura, valores y código de ética.</small></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="since-sec section alt" aria-labelledby="since-title">
-  <div class="container since-grid">
-    <div class="rv">
-      <div class="since-num grad-text" aria-hidden="true">1973</div>
-      <h2 class="since-label" id="since-title" data-i="since_label">Más de 50 años manteniendo un compromiso firme con nuestros clientes.</h2>
-    </div>
-    <div class="since-copy">
-      <p class="rv" data-i="since_p1">En PQI proveemos soluciones integrales para saneamiento, limpieza, mantenimiento y tratamiento de aguas industriales, combinando productos especializados, equipos, herramientas y asesoría técnica que contribuyen a la eficiencia operativa, la seguridad y la sostenibilidad de nuestros clientes.</p>
-      <p class="rv" data-i="since_p2">Más que suplir productos, desarrollamos soluciones orientadas a optimizar procesos, reducir costos operativos, preservar los recursos y generar resultados sostenibles que aporten valor a largo plazo.</p>
-      <a class="btn btn-outline rv" href="conoce-pqi.html"><span data-i="nav_about">Conoce PQI</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="como-trabajamos" aria-labelledby="work-title">
-  <div class="container">
-    <div class="work-card live-bg rv">
-      <div class="bg-stage" aria-hidden="true"><div class="bg-slide is-on"><img src="img/hero-planta.webp" srcset="img/hero-planta-800.webp 800w, img/hero-planta.webp 1600w" sizes="(max-width: 1240px) 100vw, 1200px" alt="" loading="lazy"></div></div>
-      <div class="veil veil-navy" aria-hidden="true"></div>
-      <div class="work-head">
-        <div>
-          <span class="kicker" data-i="work_kicker">Cómo trabajamos</span>
-          <h2 id="work-title" data-i="work_title">Un programa a la medida de cada operación.</h2>
-          <p data-i="work_p">Acompañamos a cada cliente en cada etapa: desde la visita a su planta hasta el seguimiento de los resultados.</p>
-        </div>
-        <a class="btn btn-white" href="contacto.html#cotizar"><span data-i="hero_cta1">Solicitar asesoría</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<section class="sec tint" aria-labelledby="tabla-h">
+  <div class="wrap">
+    <div class="table-head">
+      <div class="rv">
+        <span class="label" data-i="tb_label">Tabla de soluciones</span>
+        <h2 class="h2" id="tabla-h" data-i="tb_h">Cada operación tiene su fórmula.</h2>
+        <p data-i="ex_title">Soluciones para quienes cuidan de comunidades y entornos industriales.</p>
       </div>
-      <ol class="steps" style="list-style:none;margin:0;padding:0">
-        <li class="step rv"><div class="step-n">01</div><h3 data-i="st1">Diagnóstico en planta</h3><p data-i="st1_p">Visitamos su operación para entender sus procesos, su agua, sus equipos y sus objetivos.</p></li>
-        <li class="step rv"><div class="step-n">02</div><h3 data-i="st2">Propuesta técnica</h3><p data-i="st2_p">Diseñamos un programa con los productos, equipos y procedimientos que su operación necesita.</p></li>
-        <li class="step rv"><div class="step-n">03</div><h3 data-i="st3">Implementación</h3><p data-i="st3_p">Instalación, puesta en marcha y capacitación de su personal.</p></li>
-        <li class="step rv"><div class="step-n">04</div><h3 data-i="st4">Monitoreo y control</h3><p data-i="st4_p">Seguimiento continuo y soporte técnico para sostener los resultados en el tiempo.</p></li>
-      </ol>
+      <div class="filters rv" role="group" aria-label="Filtrar soluciones" data-i-attr="aria-label:a_filter">
+        <button type="button" aria-pressed="true" data-filter="all" data-i="f_all">Todo</button>
+        <button type="button" aria-pressed="false" data-filter="inst" class="g-inst"><i aria-hidden="true"></i><span data-i="grp_inst">Institucional</span></button>
+        <button type="button" aria-pressed="false" data-filter="ind" class="g-ind"><i aria-hidden="true"></i><span data-i="grp_ind">Industrial</span></button>
+        <button type="button" aria-pressed="false" data-filter="eq" class="g-eq"><i aria-hidden="true"></i><span data-i="grp_eq">Equipos y servicios</span></button>
+      </div>
+    </div>
+  {{TABLA}}
+    <p class="table-note" data-i="tb_note">Toque un elemento para ver la solución.</p>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="work-h">
+  <div class="wrap process">
+    <div class="ring-wrap">
+      <span class="label" data-i="work_kicker">Cómo trabajamos</span>
+      <h2 class="h2" id="work-h" data-i="work_title">Un programa a la medida de cada operación.</h2>
+      <div class="ring" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <circle class="track" cx="50" cy="50" r="48"/>
+          <path class="arc" pathLength="1" d="M97.88 53.35A48 48 0 0 1 53.35 97.88"/>
+          <path class="arc" pathLength="1" d="M46.65 97.88A48 48 0 0 1 2.12 53.35"/>
+          <path class="arc" pathLength="1" d="M2.12 46.65A48 48 0 0 1 46.65 2.12"/>
+          <path class="arc" pathLength="1" d="M53.35 2.12A48 48 0 0 1 97.88 46.65"/>
+        </svg>
+        <div class="ring-center"><b data-ring-n>01</b><span data-i="work_p_s">De la visita a su planta al seguimiento</span></div>
+      </div>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="n">01</span><h3 data-i="st1">Diagnóstico en sitio</h3><p data-i="st1_p">Visitamos su operación para entender sus procesos, su agua, sus equipos y sus metas.</p></li>
+      <li class="step"><span class="n">02</span><h3 data-i="st2">Propuesta técnica</h3><p data-i="st2_p">Diseñamos un programa con los productos, equipos y procedimientos que su operación necesita.</p></li>
+      <li class="step"><span class="n">03</span><h3 data-i="st3">Implementación</h3><p data-i="st3_p">Instalación, puesta en marcha y capacitación de su personal.</p></li>
+      <li class="step"><span class="n">04</span><h3 data-i="st4">Monitoreo y control</h3><p data-i="st4_p">Seguimiento continuo y soporte técnico para sostener los resultados en el tiempo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec tint" aria-labelledby="sos-h">
+  <div class="wrap venn-grid">
+    <div class="venn" aria-hidden="true">
+      <div class="c c1" data-v="1"><span data-i="p1">Inversión</span></div>
+      <div class="c c2" data-v="2"><span data-i="p2">Salud</span></div>
+      <div class="c c3" data-v="3"><span data-i="p3">Ambiente</span></div>
+      <span class="core"></span>
+    </div>
+    <div>
+      <span class="label rv" data-i="sos_kicker">PQI es sostenibilidad</span>
+      <h2 class="h2 rv" id="sos-h"><span data-i="sos_h1a">Un negocio construido</span> <span class="blue" data-i="sos_h1b">para perdurar.</span></h2>
+      <ul class="rows">
+        <li class="rv" data-v="1"><b data-i="p1">Inversión</b><p data-i="p1_s">Activos protegidos</p></li>
+        <li class="rv" data-v="2"><b data-i="p2">Salud</b><p data-i="p2_s">Personas protegidas</p></li>
+        <li class="rv" data-v="3"><b data-i="p3">Ambiente</b><p data-i="p3_s">Recursos cuidados</p></li>
+      </ul>
+      <a class="go rv" href="sostenibilidad.html" style="margin-top:36px"><span data-i="b_sos">Nuestra visión sostenible</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
     </div>
   </div>
 </section>
 
-<section class="section alt" aria-labelledby="talent-title">
-  <div class="container lead-grid">
-    <figure class="lead-photo rv-img"><img src="img/talento.webp" srcset="img/talento-800.webp 800w, img/talento.webp 1600w" sizes="(max-width: 900px) 100vw, 45vw" alt="Colaboradora de PQI revisando documentos de trabajo" data-i-attr="alt:alt_talent" loading="lazy"></figure>
-    <div class="lead-copy">
-      <span class="kicker rv" data-i="tal_kicker">Buscamos talento</span>
-      <h2 class="rv" id="talent-title" data-i="tal_title">Vamos a conocernos.</h2>
-      <p class="rv" data-i="tal_p1">En PQI reconocemos que el talento es la clave para construir un futuro más sostenible. Buscamos personas comprometidas con la innovación, la excelencia y el trabajo en equipo.</p>
-      <p class="rv" data-i="tal_p2">Forma parte de PQI y crece junto a un equipo que transforma desafíos en soluciones.</p>
-      <div class="rv"><a class="btn btn-primary" href="empleos.html"><span data-i="nav_jobs">Únete al equipo</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+<section class="sec" aria-labelledby="hist-h">
+  <div class="wrap split">
+    <p class="year-big rv" aria-hidden="true">19<span>73</span></p>
+    <div>
+      <span class="label rv" data-i="about_kicker">Nuestra historia</span>
+      <h2 class="h2 rv" id="hist-h" data-i="since_label">Más de 50 años manteniendo un firme compromiso con nuestros clientes.</h2>
+      <p class="rv" data-i="since_p1">En PQI brindamos soluciones integrales para saneamiento, limpieza, mantenimiento y tratamiento de aguas industriales, combinando productos especializados, equipos, herramientas y asesoría técnica que contribuyen a la eficiencia operativa, la seguridad y la sostenibilidad de nuestros clientes.</p>
+      <a class="go rv" href="conoce-pqi.html"><span data-i="nav_about">Conoce PQI</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="cta-title">
-  <div class="container">
-    <div class="cta-band rv">
-      <div>
-        <h2 id="cta-title" data-i="cta_title">¿Qué necesita su operación?</h2>
-        <p data-i="cta_p">Cuéntenos sobre su planta, hotel, hospital o cocina y le preparamos una propuesta técnica.</p>
-      </div>
-      <div class="actions">
-        <a class="btn btn-primary" href="contacto.html#cotizar"><span data-i="nav_quote">Cotizar</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-outline" href="tel:{{PHONE_INTL}}"><svg aria-hidden="true"><use href="#i-phone"/></svg>{{PHONE}}</a>
-      </div>
+<section class="sec tint" aria-labelledby="tal-h">
+  <div class="wrap split rev">
+    <div class="circle-photo" data-reveal><div class="ph"><img src="img/talento.webp" srcset="img/talento-800.webp 800w, img/talento.webp 1600w" sizes="(max-width: 900px) 90vw, 500px" alt="Colaboradora de PQI revisando documentos de trabajo" data-i-attr="alt:alt_talent" loading="lazy" width="500" height="500"></div><span class="bub" aria-hidden="true"></span></div>
+    <div>
+      <span class="label rv" data-i="tal_kicker">Buscamos talento</span>
+      <h2 class="h2 rv" id="tal-h" data-i="tal_title">Conozcámonos.</h2>
+      <p class="rv" data-i="tal_p1">En PQI creemos que el talento es clave para construir un futuro más sostenible. Buscamos personas comprometidas con la innovación, la excelencia y el trabajo en equipo.</p>
+      <a class="go rv" href="empleos.html" data-track="home_empleos"><span data-i="nav_jobs">Únete al equipo</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final" aria-labelledby="cta-h">
+  <canvas class="bubbles" data-bubbles="dark" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="label" data-i="cta_label">Hablemos</span>
+    <h2 class="display" id="cta-h" data-i="cta_title">¿Qué necesita su operación?</h2>
+    <p data-i="cta_p">Cuéntenos sobre su planta, hotel, hospital o cocina y le preparamos una propuesta técnica.</p>
+    <div class="row">
+      <a class="go light" href="contacto.html#cotizar" data-track="cta_cotizar"><span data-i="b_quote">Solicitar cotización</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+      <a class="tel" href="tel:{{PHONE_INTL}}" data-track="cta_tel">{{PHONE}}</a>
     </div>
   </div>
 </section>
