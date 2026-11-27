@@ -1,55 +1,49 @@
 <!--{"slug":"empleos","key":"jobs","title":"Únete al equipo · Empleos en PQI","desc":"Forma parte de PQI y crece junto a un equipo que transforma desafíos en soluciones. Envíanos tu currículum.","og":"talento"}-->
 <!--HEADER-->
-<section class="page-hero live-bg" aria-labelledby="ph-title">
-  <div class="bg-stage" aria-hidden="true"><div class="bg-slide is-on"><img src="img/talento.webp" srcset="img/talento-800.webp 800w, img/talento.webp 1600w" sizes="100vw" alt="" fetchpriority="high"></div></div>
-  <div class="veil veil-light" aria-hidden="true"></div>
-  <div class="container">
-    <div class="hero-copy">
+<section class="page-hero" aria-labelledby="ph-title">
+  <canvas class="bubbles" data-bubbles aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="copy">
       <nav class="crumbs" aria-label="Ruta" data-i-attr="aria-label:a_crumbs"><a href="index.html" data-i="c_home">Inicio</a><span aria-hidden="true">/</span><span data-i="nav_jobs">Únete al equipo</span></nav>
-      <span class="kicker" data-i="tal_kicker">Buscamos talento</span>
-      <h1 id="ph-title"><span data-i="jobs_h1a">Crece con un equipo que</span> <span class="grad-text" data-i="jobs_h1b">transforma desafíos en soluciones.</span></h1>
+      <span class="label" data-i="tal_kicker">Buscamos talento</span>
+      <h1 class="display" id="ph-title"><span data-i="jobs_h1a">Crece con un equipo que</span> <span class="blue" data-i="jobs_h1b">transforma desafíos en soluciones.</span></h1>
       <p class="lede" data-i="jobs_lede">Buscamos personas verdaderas, con el coraje de arriesgarse, que entienden que hacer una diferencia requiere pasión, paciencia y persistencia.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#cv"><span data-i="jobs_cta">Enviar mi CV</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      <div style="margin-top:36px"><a class="btn" href="#cv" data-track="empleos_cv" data-i="jobs_cta">Enviar mi CV</a></div>
+    </div>
+    <div class="orb" data-orb>
+      <div class="orb-photo"><img class="is-on" src="img/talento.webp" srcset="img/talento-800.webp 800w, img/talento.webp 1600w" sizes="(max-width: 900px) 70vw, 420px" alt="Colaboradora de PQI revisando documentos de trabajo" data-i-attr="alt:alt_talent" fetchpriority="high" width="420" height="420"></div>
+      <svg class="orb-ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="r1" cx="50" cy="50" r="50" pathLength="314"/></svg>
+      <span class="orb-dot" aria-hidden="true"></span>
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="ben-title">
-  <div class="container">
-    <div class="section-head rv">
-      <span class="kicker" data-i="k_why_pqi">Por qué PQI</span>
-      <h2 id="ben-title" data-i="ben_h">Una organización que valora a su gente.</h2>
-      <p data-i="ben_p">Nuestros valores, responsabilidad, integridad, compromiso y armonía, reflejan la cultura que compartimos.</p>
-    </div>
-    <div class="benefits">
-      <article class="benefit rv"><span class="ic" aria-hidden="true"><svg><use href="#i-growth"/></svg></span><h3 data-i="b1">Desarrollo profesional</h3><p data-i="b1_p">Crecimiento dentro de una empresa con más de 50 años en el mercado.</p></article>
-      <article class="benefit rv"><span class="ic" aria-hidden="true"><svg><use href="#i-team"/></svg></span><h3 data-i="b2">Trabajo en equipo</h3><p data-i="b2_p">Colaboradores comprometidos con la excelencia y el servicio.</p></article>
-      <article class="benefit rv"><span class="ic" aria-hidden="true"><svg><use href="#i-loop"/></svg></span><h3 data-i="b3">Mejora continua</h3><p data-i="b3_p">Innovación constante en productos, procesos y tecnología.</p></article>
-      <article class="benefit rv"><span class="ic" aria-hidden="true"><svg><use href="#i-spark"/></svg></span><h3 data-i="b4">Impacto positivo</h3><p data-i="b4_p">Ambientes más limpios, seguros y productivos en las industrias y comunidades que servimos.</p></article>
-    </div>
-    <p class="rv" style="margin-top:20px;color:var(--muted);font-size:.9rem"><span class="pending">[PENDIENTE]</span> <span data-i="ben_pending">Beneficios concretos (seguro, horario, formación) por confirmar con Recursos Humanos.</span></p>
+<section class="sec tint" aria-labelledby="ben-h">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="label" data-i="k_why_pqi">Por qué PQI</span><h2 class="h2" id="ben-h" data-i="ben_h">Una organización que valora a su gente.</h2><p data-i="ben_p">Nuestros valores, responsabilidad, integridad, compromiso y armonía, reflejan la cultura que compartimos.</p></div>
+    <ol class="nlist two">
+      <li class="rv"><span class="n">01</span><b data-i="b1">Desarrollo profesional</b><p data-i="b1_p">Crecimiento dentro de una empresa con más de 50 años en el mercado.</p></li>
+      <li class="rv"><span class="n">02</span><b data-i="b2">Trabajo en equipo</b><p data-i="b2_p">Colaboradores comprometidos con la excelencia y el servicio.</p></li>
+      <li class="rv"><span class="n">03</span><b data-i="b3">Mejora continua</b><p data-i="b3_p">Innovación constante en productos, procesos y tecnología.</p></li>
+      <li class="rv"><span class="n">04</span><b data-i="b4">Impacto positivo</b><p data-i="b4_p">Ambientes más limpios, seguros y productivos en las industrias y comunidades que servimos.</p></li>
+    </ol>
+    <p class="table-note"><span class="pending">[PENDIENTE]</span> <span data-i="ben_pending">Beneficios concretos (seguro, horario, formación) por confirmar con Recursos Humanos.</span></p>
   </div>
 </section>
 
-<section class="section alt" aria-labelledby="open-title">
-  <div class="container">
-    <div class="section-head rv">
-      <span class="kicker" data-i="k_open">Vacantes</span>
-      <h2 id="open-title" data-i="open_h">Posiciones abiertas</h2>
-    </div>
-    <ul class="jobs">
-      <li class="rv"><div><b><span class="pending">[PENDIENTE]</span></b><span data-i="open_pending">Lista de vacantes por confirmar. Mientras tanto, envíanos tu CV y te contactaremos cuando haya una posición para tu perfil.</span></div><a class="btn btn-outline" href="#cv" data-i="jobs_cta">Enviar mi CV</a></li>
-    </ul>
+<section class="sec tight" aria-labelledby="open-h">
+  <div class="wrap intro-text">
+    <div class="rv"><span class="label" data-i="k_open">Vacantes</span><h2 class="h2" id="open-h" data-i="open_h">Posiciones abiertas</h2></div>
+    <div class="body"><p class="rv"><span class="pending">[PENDIENTE]</span> <span data-i="open_pending">Lista de vacantes por confirmar. Mientras tanto, envíanos tu CV y te contactaremos cuando haya una posición para tu perfil.</span></p></div>
   </div>
 </section>
 
-<section class="section" id="cv" aria-labelledby="cv-title">
-  <div class="container contact-grid">
-    <div class="contact-copy">
-      <span class="kicker rv" data-i="k_apply">Trabaja con nosotros</span>
-      <h2 class="rv" id="cv-title" data-i="cv_h">Comparte tus datos y tu currículum.</h2>
+<section class="sec tint" id="cv" aria-labelledby="cv-h">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="label rv" data-i="k_apply">Trabaja con nosotros</span>
+      <h2 class="h2 rv" id="cv-h" data-i="cv_h">Comparte tus datos y tu currículum.</h2>
       <p class="rv" data-i="cv_p">Si deseas formar parte de una organización que valora el desarrollo profesional, el trabajo en equipo y la mejora continua, completa el formulario. Agradecemos tu interés.</p>
-      <figure class="lead-photo rv-img" style="margin-top:28px"><img src="img/edificio-800.webp" alt="Instalaciones de PQI en Santo Domingo" data-i-attr="alt:alt_building" loading="lazy" width="800" height="617"></figure>
     </div>
     <form class="form rv" id="cv-form" data-mail="info@pqi.com.do" novalidate>
       <h3 data-i="cv_form_h">Solicitud de empleo</h3>
@@ -58,16 +52,16 @@
       <div class="field"><label for="cv-correo" data-i="q_mail">Correo</label><input id="cv-correo" name="correo" type="email" autocomplete="email" required><span class="err" data-i="e_mail">Escriba un correo válido.</span></div>
       <div class="field"><label for="cv-tel" data-i="q_phone">Teléfono</label><input id="cv-tel" name="telefono" type="tel" autocomplete="tel" required><span class="err" data-i="e_tel">Escriba un teléfono válido.</span></div>
       <div class="field full"><label for="cv-area" data-i="cv_area">Área de interés (opcional)</label><input id="cv-area" name="area"></div>
-      <div class="field full"><label for="cv-file" data-i="cv_file">Currículum (PDF o Word)</label><input id="cv-file" name="cv" type="file" accept=".pdf,.doc,.docx" required aria-describedby="cv-name"><span class="err" data-i="e_file">Seleccione su currículum.</span><small id="cv-name" style="color:var(--muted)"></small></div>
+      <div class="field full"><label for="cv-file" data-i="cv_file">Currículum (PDF o Word)</label><input id="cv-file" name="cv" type="file" accept=".pdf,.doc,.docx" required aria-describedby="cv-name"><span class="err" data-i="e_file">Seleccione su currículum.</span><small class="fname" id="cv-name"></small></div>
       <div class="form-foot full">
         <small data-i="cv_note">Al enviar se abre su correo con sus datos listos; adjunte allí su currículum.</small>
-        <button class="btn btn-primary" type="submit"><span data-i="cv_send">Enviar solicitud</span><svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button class="btn" type="submit" data-track="cv_enviar"><span data-i="cv_send">Enviar solicitud</span></button>
       </div>
       <div class="form-success" hidden role="status">
-        <span class="ok-ic" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+        <span class="ok" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
         <h3 data-i="cv_ok">¡Gracias por tu interés!</h3>
         <p data-i="cv_ok_p">Se abrió tu correo con la solicitud. Adjunta tu currículum y envíalo. Si no se abrió, usa el botón.</p>
-        <div class="row"><a class="btn btn-primary" id="cv-send" href="mailto:info@pqi.com.do" data-i="cv_open">Abrir correo</a><button class="btn btn-outline" type="button" data-form-reset data-i="b_back">Volver</button></div>
+        <div class="row"><a class="btn" id="cv-send" href="mailto:info@pqi.com.do" data-i="cv_open">Abrir correo</a><button class="go" type="button" data-form-reset><span data-i="b_back">Volver</span></button></div>
       </div>
     </form>
   </div>
