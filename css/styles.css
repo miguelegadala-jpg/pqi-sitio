@@ -567,3 +567,30 @@ a.c-item:hover span { color: var(--blue); }
 .to-top { display: inline-flex; align-items: center; gap: 8px; }
 .to-top svg { width: 16px; height: 16px; transition: transform .3s var(--ease); }
 .to-top:hover svg { transform: translateY(-3px); }
+
+/* Botón flotante de WhatsApp */
+.wa-float { position: fixed; right: 24px; bottom: 24px; z-index: 95; width: 60px; height: 60px; border-radius: 50%;
+  display: grid; place-items: center; background: #25d366; color: #fff; box-shadow: 0 6px 18px rgba(13,31,54,.22); isolation: isolate;
+  transition: transform .2s ease, box-shadow .2s ease; }
+.wa-float svg { width: 32px; height: 32px; fill: currentColor; }
+.wa-float:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(13,31,54,.28); }
+.wa-float:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.anim .wa-float::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: #25d366; z-index: -1; animation: waPulse 2.6s ease-out infinite; }
+@keyframes waPulse { 0% { transform: scale(1); opacity: .55; } 70%, 100% { transform: scale(1.7); opacity: 0; } }
+.has-intro .wa-float { opacity: 0; pointer-events: none; transition: opacity .4s; }
+.has-intro.intro-done .wa-float { opacity: 1; pointer-events: auto; }
+
+/* Barra de acciones en el celular */
+.mobile-bar { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--line);
+  padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.mobile-bar .row { display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 8px; }
+.mobile-bar a { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 46px; border-radius: 12px; text-decoration: none; font-size: .9rem; font-weight: 600; color: var(--navy); background: var(--bg-alt); border: 1px solid var(--line); }
+.mobile-bar a svg { width: 18px; height: 18px; }
+.mobile-bar a.wa svg { color: #1f9d55; fill: currentColor; }
+.mobile-bar a.primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+/* Política */
+.prose { max-width: 760px; display: grid; gap: 18px; }
+.prose h2 { font-size: 1.5rem; font-weight: 600; margin-top: 16px; }
+
+/* --------------------------------------------------------------------------
