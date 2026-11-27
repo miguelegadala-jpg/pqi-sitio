@@ -246,3 +246,13 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .anim .hero.go .hero-bottom { animation-delay: .66s; }
 @keyframes lineUp { to { transform: none; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+/* Franja de cuatro áreas */
+.strip { background: var(--navy); color: #d4e2f2; position: relative; overflow: hidden; }
+.strip::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 120% at 100% 0%, rgba(18,163,201,.22), rgba(18,163,201,0) 60%); pointer-events: none; }
+.strip .row { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.strip .item { padding: 28px 24px; display: flex; align-items: center; gap: 16px; border-left: 1px solid rgba(255,255,255,.1); font-size: 1rem; font-weight: 500; color: #fff; }
+.strip .item:first-child { border-left: 0; padding-left: 0; }
+.strip .ic { width: 48px; height: 48px; flex: none; border-radius: 14px; display: grid; place-items: center; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: #8fd3ea; transition: background-color .3s, transform .4s var(--ease); }
+.strip .ic svg { width: 26px; height: 26px; }
+.strip .item:hover .ic { background: rgba(18,163,201,.22); transform: translateY(-3px) rotate(-4deg); }
