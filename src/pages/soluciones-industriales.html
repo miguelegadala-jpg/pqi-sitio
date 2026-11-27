@@ -1,59 +1,57 @@
 <!--{"slug":"soluciones-industriales","key":"ind","title":"Soluciones industriales · Alimentos, bebidas, vapor y aguas residuales | PQI","desc":"Programas de higiene, mantenimiento y tratamiento de agua para la industria de alimentos y bebidas, cárnicos y avícola, generación de vapor, enfriamiento y aguas residuales.","og":"alimentos"}-->
 <!--HEADER-->
-<section class="page-hero live-bg" aria-labelledby="ph-title">
-  <div class="bg-stage" aria-hidden="true"><div class="bg-slide is-on"><img src="img/hero-planta.webp" srcset="img/hero-planta-800.webp 800w, img/hero-planta.webp 1600w" sizes="100vw" alt="" fetchpriority="high"></div></div>
-  <div class="veil veil-light" aria-hidden="true"></div>
-  <div class="container">
-    <div class="hero-copy">
+<section class="page-hero" aria-labelledby="ph-title">
+  <canvas class="bubbles" data-bubbles aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="copy">
       <nav class="crumbs" aria-label="Ruta" data-i-attr="aria-label:a_crumbs"><a href="index.html" data-i="c_home">Inicio</a><span aria-hidden="true">/</span><span data-i="nav_ind_l">Soluciones industriales</span></nav>
-      <span class="kicker"><span data-i="k_sol">Soluciones</span> · 02</span>
-      <h1 id="ph-title"><span data-i="ind_h1a">Procesos eficientes,</span> <span class="grad-text" data-i="ind_h1b">activos protegidos.</span></h1>
+      <span class="label" data-i="k_sol">Soluciones</span>
+      <h1 class="display" id="ph-title"><span data-i="ind_h1a">Procesos eficientes,</span> <span class="blue" data-i="ind_h1b">activos protegidos.</span></h1>
       <p class="lede" data-i="ind_lede">Soluciones integrales para optimizar los procesos industriales y garantizar la seguridad, confiabilidad y sostenibilidad de su operación.</p>
+      <div style="margin-top:36px"><a class="go" href="#sectores"><span data-i="k_sectors">Sectores</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a></div>
+    </div>
+    <div class="orb" data-orb>
+      <div class="orb-photo"><img class="is-on" src="img/industriales.webp" srcset="img/industriales-800.webp 800w, img/industriales.webp 1600w" sizes="(max-width: 900px) 70vw, 420px" alt="Planta industrial en operación" data-i-attr="alt:alt_ind" fetchpriority="high" width="420" height="420"></div>
+      <svg class="orb-ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="r1" cx="50" cy="50" r="50" pathLength="314"/></svg>
+      <span class="orb-dot" aria-hidden="true"></span>
     </div>
   </div>
 </section>
-
-<section class="section" aria-labelledby="ind-lead">
-  <div class="container lead-grid">
-    <div>
-      <span class="kicker rv" data-i="k_approach">Nuestro enfoque</span>
-      <h2 class="rv" id="ind-lead" data-i="ind_lead_h">Prevención, optimización de recursos y mejora continua.</h2>
-    </div>
-    <div class="lead-copy">
-      <p class="rv" data-i="ind_lead_p1">Combinamos experiencia técnica, productos de alto desempeño, tecnologías de vanguardia y un acompañamiento especializado para diseñar programas adaptados a cada cliente y a cada proceso productivo.</p>
-      <p class="rv" data-i="ind_lead_p2">Establecemos alianzas de largo plazo con asesoría técnica, monitoreo continuo y soluciones que incrementan la productividad y promueven una operación más rentable y responsable con el medio ambiente.</p>
+<section class="sec" aria-labelledby="it-h">
+  <div class="wrap intro-text">
+    <div class="rv"><span class="label" data-i="k_approach">Nuestro enfoque</span><h2 class="h2" id="it-h" data-i="ind_lead_h">Prevención, optimización de recursos y mejora continua.</h2></div>
+    <div class="body">
+      <p class="rv" data-i="ind_lead_p1">Combinamos experiencia técnica, productos de alto desempeño, tecnología de vanguardia y acompañamiento especializado para diseñar programas adaptados a cada cliente y a cada proceso productivo.</p>
+      <p class="rv" data-i="ind_lead_p2">Construimos relaciones de largo plazo con asesoría técnica, monitoreo continuo y soluciones que elevan la productividad y promueven una operación más rentable y responsable con el medio ambiente.</p>
     </div>
   </div>
 </section>
-
-<section class="section alt" id="sectores" aria-labelledby="ind-tabs">
-  <div class="container">
-    <div class="section-head rv">
-      <span class="kicker" data-i="k_sectors">Sectores</span>
-      <h2 id="ind-tabs" data-i="ind_tabs_h">Donde la calidad del agua, la higiene y la confiabilidad son críticas.</h2>
-    </div>
-    <div class="rv">
-  {{TABS:industriales}}
-    </div>
+<section class="sec tint" id="sectores" aria-labelledby="sec-h">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="label" data-i="k_sectors">Sectores</span><h2 class="h2" id="sec-h" data-i="ind_tabs_h">Donde la calidad del agua, la higiene y la confiabilidad son críticas.</h2></div>
+    {{SECTORES:ind}}
   </div>
 </section>
 
-<section class="section" aria-labelledby="ind-why">
-  <div class="container">
-    <div class="section-head rv">
-      <span class="kicker" data-i="k_results">Resultados que buscamos</span>
-      <h2 id="ind-why" data-i="ind_why_h">Programas que se notan en planta y en los números.</h2>
-    </div>
-    <ul class="checks">
-      <li class="rv"><span class="ic" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><b data-i="r1">Menos costos operativos</b><span data-i="r1_p">Optimizamos el consumo de agua, energía y productos químicos.</span></div></li>
-      <li class="rv"><span class="ic" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><b data-i="r2">Activos protegidos</b><span data-i="r2_p">Prevenimos el desgaste, la corrosión y la acumulación de depósitos.</span></div></li>
-      <li class="rv"><span class="ic" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><b data-i="r3">Estándares cumplidos</b><span data-i="r3_p">Calidad, inocuidad, seguridad y sostenibilidad en cada proceso.</span></div></li>
-    </ul>
+<section class="sec" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="label" data-i="k_results">Los resultados que buscamos</span><h2 class="h2" id="why-h" data-i="ind_why_h">Programas que se notan en la planta y en los números.</h2></div>
+    <ol class="nlist">
+      <li class="rv"><span class="n">01</span><b data-i="r1">Menores costos operativos</b><p data-i="r1_p">Optimizamos el uso de agua, energía y químicos.</p></li>
+      <li class="rv"><span class="n">02</span><b data-i="r2">Activos protegidos</b><p data-i="r2_p">Prevenimos el desgaste, la corrosión y la formación de depósitos.</p></li>
+      <li class="rv"><span class="n">03</span><b data-i="r3">Estándares cumplidos</b><p data-i="r3_p">Calidad, inocuidad, seguridad y sostenibilidad en cada proceso.</p></li>
+    </ol>
   </div>
 </section>
 
-<section class="next-sec">
-  <div class="container">
-    <a class="next-card rv" href="equipos-y-servicios.html"><span class="next-label" data-i="next">Siguiente</span><span class="next-title" data-i="nav_eq_l">Equipos y servicios</span><span class="next-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+<section class="cta-final" aria-labelledby="cta-h">
+  <canvas class="bubbles" data-bubbles="dark" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="label" data-i="cta_label">Hablemos</span>
+    <h2 class="display" id="cta-h" data-i="cta_title">¿Qué necesita su operación?</h2>
+    <div class="row">
+      <a class="go light" href="contacto.html#cotizar" data-track="cta_cotizar"><span data-i="b_quote">Solicitar cotización</span><i><svg aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+      <a class="tel" href="tel:{{PHONE_INTL}}" data-track="cta_tel">{{PHONE}}</a>
+    </div>
   </div>
 </section>
