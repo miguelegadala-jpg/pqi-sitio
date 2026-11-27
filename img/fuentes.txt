@@ -1,0 +1,31 @@
+# Fotos del sitio actual de PQI (pqi.com.do). Formato: nombre-local|archivo-original
+# El workflow "Fotos" las baja y genera nombre-800.webp y nombre.webp (1600w, o el tamaño original si es menor).
+hero-agua|PQI-ambientes-sano.jpg
+hero-planta|industria+bebida.jpg
+hero-tratamiento|sostenibilidad.jpg
+institucionales|PQI-soluciones-institucionales.jpg
+industriales|PQI-soluciones-industriales.jpg
+agua-generacion|PQI-agua-y-generacion.jpg
+equipos|PQI-equipos-y-servicios.jpg
+edificio|PQI+edificio+vertical_1.jpg
+pqi-1980|PQI+1980.jpg
+talento|PQI-talento-humano.jpg
+futuro|PQI-comprometidos-con-el-futuro+%281%29.jpg
+integracion|pqi-integracion.jpg
+responsabilidad|pqi-responsabilidad-social-1.jpg
+hoteles|PQI-Hoteles-y-Hosteleria-1c028d4d.jpg
+hospitales|PQI-Hospitales-y-Clinicas-ee0ec7ca.jpg
+textil|PQI-Cuidado-textil-3047d08e.jpg
+restaurantes|restauracio-n-y-catering.jpg
+facilidades|PQI-Mantenimiento-Facilidades-3999dc5b.jpg
+aguas-recreativas|Aguas+recreacionales+y+potables+PQI.jpg
+alimentos|industria+alimentaria+peq.jpg
+bebidas|industria+bebida.jpg
+carnicos|industria+carnica+avicola+peq.jpg
+mant-industrial|PQI-Mantenimiento-industrial-624a0ce3.jpg
+vapor|PQI-Generacion-de-vapor-247f17bf.jpg
+enfriamiento|PQI-Sistema-de-enfriamiento-60dce794.jpg
+residuales|PQI-Aguas-residuales-5d33a6d0.jpg
+control|PQI-Control-y-monitoreo-de-procesos-8d79a775.jpg
+pretratamiento|PQI-Sistema-de-tratamiento-de-agua-bbd41f84.jpg
+servsafe|entrenamiento+PQI.jpg

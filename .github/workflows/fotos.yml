@@ -1,0 +1,36 @@
+name: Fotos
+# Baja las fotos listadas en img/fuentes.txt y las convierte a .webp (800w y 1600w)
+on:
+  workflow_dispatch:
+  push:
+    paths: ["img/fuentes.txt"]
+permissions:
+  contents: write
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar herramientas
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq webp imagemagick
+      - name: Bajar y convertir
+        run: |
+          set -e
+          base="https://irp.cdn-website.com/f0ed2771/dms3rep/multi"
+          grep -v '^#' img/fuentes.txt | grep '|' | while IFS='|' read -r name src; do
+            [ -f "img/$name.webp" ] && [ -f "img/$name-800.webp" ] && continue
+            tmp="$(mktemp)"
+            curl -fsSL -A "Mozilla/5.0" "$base/$src" -o "$tmp" || { echo "No se pudo bajar $src"; continue; }
+            w=$(identify -format '%w' "$tmp[0]")
+            big=$(( w < 1600 ? w : 1600 )); small=$(( w < 800 ? w : 800 ))
+            cwebp -quiet -q 78 -resize "$big" 0 "$tmp" -o "img/$name.webp"
+            cwebp -quiet -q 76 -resize "$small" 0 "$tmp" -o "img/$name-800.webp"
+            echo "$name: ${w}px -> $big / $small"
+          done
+      - name: Guardar en el repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/*.webp
+          git diff --cached --quiet || git commit -m "Fotos de PQI en webp (800w y 1600w)"
+          git push
