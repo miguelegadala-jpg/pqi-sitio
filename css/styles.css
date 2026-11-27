@@ -607,3 +607,78 @@ a.c-item:hover span { color: var(--blue); }
 .anim body { transition: opacity .2s ease; }
 .leaving body { opacity: 0; }
 .lang-swap main, .lang-swap .site-header, .lang-swap .site-footer { opacity: .25; transition: opacity .2s; }
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .nav a, .pill { padding: 6px 12px; font-size: .84rem; }
+  .nav, .header-actions { gap: 5px; }
+  .header-row { padding-left: 20px; padding-right: 20px; }
+}
+@media (max-width: 1060px) {
+  .nav { display: none; }
+  .menu-toggle { display: inline-flex; }
+  .header-actions .pill:not(.pill-primary):not(.lang-toggle) { display: none; }
+  .menu-open .mobile-menu { display: block; }
+  .explore-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .x-card, .x-card.big { grid-column: span 1; min-height: 340px; }
+  .x-card:last-child { grid-column: 1 / -1; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .checks { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  :root { --header-h: 70px; }
+  .brand img { height: 48px; }
+  .strip .row { grid-template-columns: 1fr 1fr; }
+  .strip .item { padding: 20px 14px; border-left: 0; }
+  .strip .item:first-child { padding-left: 14px; }
+  .since-grid, .lead-grid, .contact-grid, .tabs { grid-template-columns: minmax(0, 1fr); }
+  .tablist { position: static; display: flex; overflow-x: auto; gap: 8px; padding-bottom: 6px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .tab { flex: none; width: auto; grid-template-columns: auto auto; scroll-snap-align: start; padding: 10px 14px; }
+  .tab svg { display: none; }
+  .tab:hover { transform: none; }
+  .svc-grid, .pillars, .mv-grid { grid-template-columns: minmax(0, 1fr); }
+  .pillar-band { grid-template-columns: minmax(0, 1fr); }
+  .work-head { grid-template-columns: minmax(0, 1fr); }
+  .cta-band, .ethics { grid-template-columns: minmax(0, 1fr); }
+  .timeline::before, .timeline::after { left: 9px; }
+  .t-item { grid-template-columns: 18px minmax(0, 1fr); gap: 18px; }
+  .t-dot { grid-column: 1; margin-top: 22px; }
+  .t-item:nth-child(odd) .t-card, .t-item:nth-child(even) .t-card { grid-column: 2; text-align: left; }
+  .mobile-bar { display: block; }
+  .wa-float { right: 16px; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); width: 54px; height: 54px; }
+  .wa-float svg { width: 28px; height: 28px; }
+  .site-footer { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width: 600px) {
+  .header-row { gap: 10px; padding-left: 14px; padding-right: 14px; }
+  .header-actions .pill-primary span { display: none; }
+  .header-actions .pill-primary { padding: 7px 11px; }
+  .hero-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; min-width: 100%; }
+  .hero-facts span { font-size: .78rem; display: block; line-height: 1.3; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .explore-grid { grid-template-columns: minmax(0, 1fr); }
+  .x-card, .x-card.big, .x-card:last-child { grid-column: auto; min-height: 280px; }
+  .steps, .benefits, .checks, .values-grid { grid-template-columns: minmax(0, 1fr); }
+  .strip .row { grid-template-columns: minmax(0, 1fr); }
+  .strip .item { padding: 14px 0; border-top: 1px solid rgba(255,255,255,.08); }
+  .strip .item:first-child { padding-left: 0; border-top: 0; }
+  .foot-grid { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .pillar-band article { grid-template-columns: 84px minmax(0, 1fr); }
+  .pillar-band img { width: 84px; height: 84px; }
+  .tp-media { aspect-ratio: 4 / 3; }
+  .form { grid-template-columns: minmax(0, 1fr); }
+  .veil-light { background: linear-gradient(180deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.86) 60%, rgba(255,255,255,.7) 100%); }
+  .value { min-height: 150px; }
+  .jobs li { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .x-card { transform: none !important; }
+  .x-glare, .x-card::after { display: none; }
+}
