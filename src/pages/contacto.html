@@ -1,0 +1,49 @@
+<!--{"slug":"contacto","key":"contact","title":"Contacto y cotización · PQI Productos Químicos Industriales","desc":"Calle Central #11, Zona Industrial de Herrera, Santo Domingo. Tel. 809-537-9990 · info@pqi.com.do. Solicite su cotización y le preparamos una propuesta técnica.","og":"edificio","ld":true}-->
+<!--HEADER-->
+<section class="section contact-sec live-bg" id="cotizar" aria-labelledby="contact-title">
+  <div class="bg-stage" aria-hidden="true"><div class="bg-slide is-on"><img src="img/edificio.webp" srcset="img/edificio-800.webp 800w, img/edificio.webp 1600w" sizes="100vw" alt=""></div></div>
+  <div class="veil veil-soft" aria-hidden="true"></div>
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <nav class="crumbs" aria-label="Ruta" data-i-attr="aria-label:a_crumbs"><a href="index.html" data-i="c_home">Inicio</a><span aria-hidden="true">/</span><span data-i="nav_contact">Contacto</span></nav>
+      <span class="kicker rv" data-i="k_contact">Contáctenos</span>
+      <h1 class="rv" id="contact-title" style="font-size:clamp(2.2rem,1.4rem + 2.6vw,3.4rem);font-weight:600;letter-spacing:-.035em"><span data-i="contact_h1a">Estamos para</span> <span class="grad-text" data-i="contact_h1b">servirle.</span></h1>
+      <p class="rv" data-i="contact_p">Cuéntenos qué necesita su operación y nos pondremos en contacto con usted en breve.</p>
+      <div class="c-list">
+        <a class="c-item rv" href="{{MAPS}}" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg><use href="#i-pin"/></svg></span><div><small data-i="c_addr">Dirección · ver en Google Maps</small><span>Calle Central #11, Zona Industrial de Herrera, Santo Domingo, República Dominicana</span></div></a>
+        <a class="c-item rv" href="tel:{{PHONE_INTL}}"><span class="ic" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><div><small data-i="c_phone">Central telefónica</small><span>{{PHONE}}</span></div></a>
+        <a class="c-item rv" href="mailto:info@pqi.com.do"><span class="ic" aria-hidden="true"><svg><use href="#i-mail"/></svg></span><div><small data-i="c_mail">Escríbanos</small><span>info@pqi.com.do</span></div></a>
+        <a class="c-item rv" href="mailto:admventas@pqi.com.do"><span class="ic" aria-hidden="true"><svg><use href="#i-mail"/></svg></span><div><small data-i="c_sales">Departamento de ventas</small><span>admventas@pqi.com.do</span></div></a>
+        <a class="c-item rv" href="https://wa.me/{{WA}}" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><span>{{PHONE}}</span></div></a>
+      </div>
+    </div>
+    <form class="form rv" id="quote" data-wa="{{WA}}" novalidate>
+      <h3 data-i="q_h">Solicite su cotización</h3>
+      <div class="field"><label for="q-nombre" data-i="q_name">Nombre</label><input id="q-nombre" name="nombre" autocomplete="name" required><span class="err" data-i="e_req">Este campo es obligatorio.</span></div>
+      <div class="field"><label for="q-empresa" data-i="q_company">Empresa</label><input id="q-empresa" name="empresa" autocomplete="organization"></div>
+      <div class="field"><label for="q-tel" data-i="q_phone">Teléfono</label><input id="q-tel" name="telefono" type="tel" autocomplete="tel" required><span class="err" data-i="e_tel">Escriba un teléfono válido.</span></div>
+      <div class="field"><label for="q-sector" data-i="q_sector">Sector</label>
+        <select id="q-sector" name="sector" required>
+          <option value="" data-i="q_choose">Seleccione…</option>
+          <option value="Hotelería" data-i="s1">Hotelería</option>
+          <option value="Salud" data-i="s2">Salud</option>
+          <option value="Alimentos" data-i="s3">Alimentos</option>
+          <option value="Bebidas" data-i="s4">Bebidas</option>
+          <option value="Industria" data-i="s5">Industria</option>
+          <option value="Otro" data-i="s6">Otro</option>
+        </select><span class="err" data-i="e_sector">Seleccione un sector.</span></div>
+      <div class="field full"><label for="q-correo" data-i="q_mail">Correo</label><input id="q-correo" name="correo" type="email" autocomplete="email"><span class="err" data-i="e_mail">Escriba un correo válido.</span></div>
+      <div class="field full"><label for="q-necesidad" data-i="q_need">¿Qué necesita su operación?</label><textarea id="q-necesidad" name="necesidad" required></textarea><span class="err" data-i="e_req">Este campo es obligatorio.</span></div>
+      <div class="form-foot full">
+        <small data-i="q_note">Al enviar se arma el mensaje para WhatsApp con sus datos.</small>
+        <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i="q_send">Enviar por WhatsApp</span></button>
+      </div>
+      <div class="form-success" hidden role="status">
+        <span class="ok-ic" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+        <h3 data-i="q_ok">¡Gracias! Su mensaje está listo.</h3>
+        <p data-i="q_ok_p">Se abrió WhatsApp con su solicitud. Si no se abrió, use el botón.</p>
+        <div class="row"><a class="btn btn-primary" id="wa-send" href="https://wa.me/{{WA}}" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i="q_open">Abrir WhatsApp</span></a><button class="btn btn-outline" type="button" data-form-reset data-i="b_back">Volver</button></div>
+      </div>
+    </form>
+  </div>
+</section>
