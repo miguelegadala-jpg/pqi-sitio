@@ -339,3 +339,36 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .cta-band h2 { font-size: clamp(1.9rem, 1.3rem + 2vw, 2.8rem); font-weight: 600; }
 .cta-band p { margin-top: 12px; color: var(--muted); max-width: 52ch; font-size: 1.1rem; }
 .cta-band .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* --------------------------------------------------------------------------
+   Páginas internas: portada
+   -------------------------------------------------------------------------- */
+.page-hero { min-height: min(72svh, 640px); display: flex; align-items: flex-end; }
+.page-hero .container { padding-block: clamp(80px, 10vw, 130px) clamp(48px, 6vw, 80px); }
+.page-hero .hero-copy { max-width: 760px; }
+.page-hero h1 { font-size: clamp(2.4rem, 1.4rem + 3.6vw, 4.4rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1.04; }
+.page-hero .lede { margin-top: 20px; font-size: 1.15rem; max-width: 56ch; color: var(--text); }
+.crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: .85rem; color: var(--muted); margin-bottom: 18px; }
+.crumbs a { text-decoration: none; color: var(--blue); }
+.crumbs a:hover { text-decoration: underline; }
+.anim .page-hero .hero-copy > * { opacity: 0; animation: fadeUp .9s var(--ease) forwards; }
+.anim .page-hero .hero-copy > *:nth-child(2) { animation-delay: .1s; }
+.anim .page-hero .hero-copy > *:nth-child(3) { animation-delay: .2s; }
+.anim .page-hero .hero-copy > *:nth-child(4) { animation-delay: .3s; }
+.anim .page-hero .hero-copy > *:nth-child(5) { animation-delay: .4s; }
+
+/* Texto de introducción en dos columnas */
+.lead-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 6vw, 88px); align-items: start; }
+.lead-grid h2 { font-size: clamp(1.9rem, 1.3rem + 2vw, 2.8rem); font-weight: 600; }
+.lead-copy { display: grid; gap: 18px; font-size: 1.08rem; }
+.lead-photo { margin: 0; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4 / 3; }
+.lead-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Lista de distintivos */
+.checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.checks li { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 14px; align-items: start; padding: 20px; border-radius: 16px; background: #fff; border: 1px solid var(--line); transition: border-color .3s, transform .4s var(--ease), box-shadow .4s; }
+.checks li:hover { border-color: var(--sky-line); transform: translateY(-4px); box-shadow: var(--shadow); }
+.checks .ic { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--sky-soft); color: var(--blue); }
+.checks .ic svg { width: 18px; height: 18px; }
+.checks b { display: block; color: var(--ink); font-weight: 600; font-size: 1rem; line-height: 1.35; }
+.checks span { display: block; margin-top: 4px; font-size: .93rem; color: var(--muted); line-height: 1.5; }
