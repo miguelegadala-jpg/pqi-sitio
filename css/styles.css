@@ -476,3 +476,18 @@ html:not(.anim) .timeline::after { height: 100%; }
 .t-date { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--blue); letter-spacing: -0.01em; }
 .t-card p { margin-top: 6px; font-size: .97rem; color: var(--text); }
 .t-card img { margin-top: 14px; border-radius: 12px; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+
+/* --------------------------------------------------------------------------
+   Únete al equipo
+   -------------------------------------------------------------------------- */
+.benefits { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.benefit { padding: 26px; border-radius: 20px; background: #fff; border: 1px solid var(--line); transition: transform .45s var(--ease), border-color .3s; }
+.benefit:hover { transform: translateY(-5px); border-color: var(--sky-line); }
+.benefit .ic { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: var(--sky-soft); color: var(--blue); }
+.benefit .ic svg { width: 24px; height: 24px; }
+.benefit h3 { margin-top: 18px; font-size: 1.12rem; font-weight: 600; }
+.benefit p { margin-top: 8px; font-size: .95rem; color: var(--text); }
+.jobs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.jobs li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 26px 0; border-bottom: 1px solid var(--line); }
+.jobs b { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; color: var(--ink); }
+.jobs span { display: block; margin-top: 4px; color: var(--muted); font-size: .95rem; }
