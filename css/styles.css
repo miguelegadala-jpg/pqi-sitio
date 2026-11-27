@@ -411,3 +411,25 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .svc-card p { font-size: .97rem; color: var(--text); }
 .svc-card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -26px rgba(10,42,79,.45); border-color: var(--sky-line); }
 .svc-card:hover .im img { transform: scale(1.07); }
+
+/* --------------------------------------------------------------------------
+   Sostenibilidad: tres pilares
+   -------------------------------------------------------------------------- */
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.pillar { position: relative; padding: clamp(28px, 3vw, 38px); border-radius: 24px; background: #fff; border: 1px solid var(--line); overflow: hidden; transition: transform .45s var(--ease), box-shadow .45s; }
+.pillar:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -28px rgba(10,42,79,.45); }
+.pillar::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform 1.1s var(--ease) .3s; }
+.pillar.in::after, html:not(.anim) .pillar::after { transform: scaleX(1); }
+.pillar .p-ic { width: 72px; height: 72px; border-radius: 22px; display: grid; place-items: center; background: var(--sky-soft); color: var(--blue); }
+.pillar .p-ic svg { width: 40px; height: 40px; overflow: visible; }
+.pillar .p-ic svg .dr { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.anim .pillar .p-ic svg .dr { stroke-dashoffset: 1; }
+.anim .pillar.in .p-ic svg .dr { animation: draw 1.4s cubic-bezier(.65,0,.35,1) forwards; animation-delay: calc(.25s + var(--k, 0) * .18s); }
+.pillar h3 { margin-top: 24px; font-size: 1.45rem; font-weight: 600; }
+.pillar .p-sub { margin-top: 4px; font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--aqua-dark); }
+.pillar p { margin-top: 12px; color: var(--text); }
+.pillar-band { margin-top: 18px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.pillar-band article { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 20px; align-items: center; padding: 18px; border-radius: 22px; background: #fff; border: 1px solid var(--line); }
+.pillar-band img { width: 120px; height: 120px; border-radius: 16px; object-fit: cover; }
+.pillar-band h3 { font-size: 1.2rem; font-weight: 600; }
+.pillar-band p { margin-top: 6px; font-size: .95rem; color: var(--text); }
