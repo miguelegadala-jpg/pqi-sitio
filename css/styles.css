@@ -330,3 +330,12 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .step p { margin-top: 8px; font-size: .95rem; color: #d6e4f3; line-height: 1.55; }
 .step::before { content: ""; position: absolute; left: 22px; right: 22px; top: 0; height: 2px; border-radius: 2px; background: linear-gradient(90deg, #9fd9ee, rgba(159,217,238,0)); transform: scaleX(0); transform-origin: left; transition: transform 1s var(--ease); transition-delay: calc(var(--d, 0s) + .2s); }
 .step.in::before, html:not(.anim) .step::before { transform: scaleX(1); }
+
+/* --------------------------------------------------------------------------
+   Llamado a la acción
+   -------------------------------------------------------------------------- */
+.cta-band { position: relative; border-radius: 30px; padding: clamp(36px, 6vw, 72px); background: var(--sky-soft); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px; align-items: center; overflow: hidden; isolation: isolate; }
+.cta-band::after { content: ""; position: absolute; right: -80px; top: -80px; width: 320px; height: 320px; border-radius: 50%; border: 28px solid rgba(5,93,167,.07); z-index: -1; }
+.cta-band h2 { font-size: clamp(1.9rem, 1.3rem + 2vw, 2.8rem); font-weight: 600; }
+.cta-band p { margin-top: 12px; color: var(--muted); max-width: 52ch; font-size: 1.1rem; }
+.cta-band .actions { display: flex; flex-wrap: wrap; gap: 12px; }
