@@ -1,7 +1,7 @@
-/* Selector de idioma ES / EN (igual que en GBH).
+/* Selector de idioma ES / EN.
    El español vive en el HTML. Cada texto traducible lleva data-i="clave" y su
    versión en inglés está aquí. Los atributos usan data-i-attr="aria-label:clave".
-   Las claves t_* (subcategorías) las escribe build.py desde src/tabs.json. */
+   Las claves t_* (subcategorías) las escribe build.py desde src/tabla.json. */
 (function () {
   "use strict";
   var EN = {
@@ -32,7 +32,7 @@
 
     /* Inicio */
     intro_tag: "Complete solutions", intro_hint: "Scroll to enter",
-    hero_kicker: "Industrial chemical products · Santo Domingo since 1973",
+    hero_kicker: "Industrial chemical products since 1973",
     hero_l1: "Healthier environments.", hero_l2: "More efficient processes.", hero_l3: "Since 1973.",
     hero_lede: "Comprehensive solutions for sanitation, cleaning, maintenance and industrial water treatment: specialized products, equipment and technical advice from one partner.",
     hero_cta1: "Request advice", hero_cta2: "See solutions",
@@ -182,7 +182,7 @@
     /* Contacto y formularios */
     k_contact: "Contact us", contact_h1a: "We're here", contact_h1b: "to help.",
     contact_p: "Tell us what your operation needs and we'll get back to you shortly.",
-    c_addr: "Address · open in Google Maps", c_phone: "Main line", c_mail: "Write to us", c_sales: "Sales department",
+    c_addr: "Address, open in Google Maps", c_phone: "Main line", c_mail: "Write to us", c_sales: "Sales department",
     q_h: "Request a quote", q_name: "Name", q_company: "Company", q_phone: "Phone", q_sector: "Sector", q_mail: "Email",
     q_need: "What does your operation need?", q_choose: "Select…",
     s1: "Hospitality", s2: "Healthcare", s3: "Food", s4: "Beverages", s5: "Industry", s6: "Other",
@@ -195,7 +195,22 @@
     priv_pending: "Legal text to be confirmed with PQI. In the meantime, you can read the current policy on the existing site.",
     priv_btn: "See current policy", priv_contact: "For any questions about your personal data, write to info@pqi.com.do.",
 
-    /* Subcategorías (generado por build.py) */
+    /* v2 */
+    a_close_x: "Close", a_filter: "Filter solutions", alt_eq: "Dosing and control equipment", alt_fut: "Green leaf over clean water",
+    alt_h1: "Treated water in motion", alt_h2: "Industrial plant", alt_h3: "Water treatment plant",
+    alt_ind: "Industrial plant in operation", alt_inst: "Clean, sanitized institutional area",
+    b_more: "Learn more", b_quote: "Request a quote", b_sos: "Our sustainable vision", brand_sub: "Industrial Chemical Products",
+    c_addr_s: "Address", cta_label: "Let's talk", f_all: "All", f_social: "Social", fw_a: "Complete", fw_b: "solutions.",
+    grp_inst: "Institutional", grp_ind: "Industrial", grp_eq: "Equipment and services",
+    m_jun: "June", m_sep: "September", m_ago: "August", m_oct: "October", m_ene: "January",
+    man_label: "Our commitment",
+    man_a: "More than supplying products, we develop solutions that optimize processes, reduce operating costs, preserve resources and deliver",
+    man_b: "sustainable, long-term value.",
+    menu: "Menu", nav_home: "Home", ops_label: "What do you operate?", pend_servsafe: "ServSafe® course calendar.",
+    tb_label: "Solutions table", tb_h: "Every operation has its formula.", tb_note: "Tap an element to see the solution.",
+    tl_hint: "Swipe to explore", work_p_s: "From the visit to your plant to follow-up",
+
+    /* Soluciones (generado por build.py) */
     /*GEN*/
     t_hoteles: "Hotels and hospitality",
     t_hoteles_p: "Comprehensive hygiene, cleaning and sanitation solutions built for the highest quality, safety and food-safety standards in hospitality. They streamline cleaning processes, protect the health of guests and staff, and extend the life of your facilities.",
@@ -236,6 +251,15 @@
     t_residuales: "Wastewater treatment",
     t_residuales_p: "Comprehensive effluent treatment solutions that improve environmental performance, optimize resources and reaffirm your commitment to communities and the environment.",
     t_residuales_alt: "Wastewater treatment plant",
+    t_control: "Control, dosing and automation",
+    t_control_p: "Application, dosing, automation, control and monitoring to optimize chemical use and ensure consistent performance at every stage of the operation.",
+    t_control_alt: "Process control and monitoring equipment",
+    t_pretratamiento: "Water pretreatment",
+    t_pretratamiento_p: "We design, supply and implement systems that condition different water sources to meet the technical specifications of each industrial process.",
+    t_pretratamiento_alt: "Water treatment system",
+    t_servsafe: "ServSafe® certifications",
+    t_servsafe_p: "As authorized instructors, we offer the National Restaurant Association's ServSafe® food safety and hygiene training.",
+    t_servsafe_alt: "PQI training session",
     /*END GEN*/
   };
 
@@ -277,6 +301,7 @@
     var mt = document.querySelector('meta[property="og:locale"]'); if (mt) mt.setAttribute("content", l === "en" ? "en_US" : "es_DO");
     if (save) store.set(l);
     paint();
+    document.dispatchEvent(new CustomEvent("pqi:lang", { detail: l }));
   }
   document.addEventListener("click", function (e) {
     var b = e.target.closest && e.target.closest("[data-lang-toggle]");
