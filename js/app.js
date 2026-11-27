@@ -31,6 +31,7 @@
   });
 
   /* ---------------- Menú móvil ---------------- */
+  var header = $(".site-header");
   var toggle = $(".menu-toggle");
   function setMenu(open) {
     root.classList.toggle("menu-open", open);
@@ -39,10 +40,26 @@
   if (toggle) toggle.addEventListener("click", function () { setMenu(!root.classList.contains("menu-open")); });
   $$(".mobile-menu a").forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && root.classList.contains("menu-open")) { setMenu(false); toggle.focus(); } });
-  window.matchMedia("(min-width: 1061px)").addEventListener("change", function (m) { if (m.matches) setMenu(false); });
+  // Si el menú o los botones no caben junto al logo, se usa la hamburguesa
+  var nav = $(".nav"), actions = $(".header-actions"), brand = $(".site-header .brand");
+  function fitNav() {
+    if (!header || !nav || !brand) return;
+    var was = header.classList.contains("nav-compact");
+    header.classList.remove("nav-compact");
+    var tight = false;
+    if (getComputedStyle(nav).display !== "none") {
+      var b = brand.getBoundingClientRect(), last = nav.lastElementChild.getBoundingClientRect(), first = actions.firstElementChild;
+      var gap = 12, firstVisible = Array.prototype.filter.call(actions.children, function (c) { return c.offsetWidth > 0; })[0];
+      tight = last.right > b.left - gap || nav.scrollWidth > nav.clientWidth + 1 || (firstVisible && firstVisible.getBoundingClientRect().left < b.right + gap);
+    }
+    header.classList.toggle("nav-compact", tight);
+    if (was && !tight) setMenu(false);
+  }
+  if (window.ResizeObserver && header) { var ro = new ResizeObserver(fitNav); [header, actions].concat(nav ? Array.prototype.slice.call(nav.children) : []).forEach(function (el) { if (el) ro.observe(el); }); } else window.addEventListener("resize", fitNav);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
 
   /* ---------------- Header con sombra al bajar (sin escuchar el scroll) ---------------- */
-  var header = $(".site-header"), sentinel = $(".top-sentinel");
+  var sentinel = $(".top-sentinel");
   if (hasIO && header && sentinel) new IntersectionObserver(function (e) { header.classList.toggle("scrolled", !e[0].isIntersecting && e[0].boundingClientRect.top < 0); }).observe(sentinel);
 
   /* ---------------- Aparición al entrar en pantalla (.rv) ---------------- */

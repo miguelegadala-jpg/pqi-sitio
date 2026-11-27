@@ -155,7 +155,7 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px));
   display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 16px;
 }
-.nav { display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; }
+.nav { display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; min-width: 0; overflow: hidden; }
 .nav a, .pill {
   position: relative; text-decoration: none; font-size: .88rem; font-weight: 500; color: #1d2a3d; white-space: nowrap;
   padding: 7px 15px; border-radius: 999px; background: #eff4f9; border: 1px solid #e0e8f1; line-height: 1.45;
@@ -195,6 +195,12 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .mobile-menu a[aria-current] { color: var(--blue); }
 .mobile-menu .mm-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
 .mobile-menu .mm-actions .btn { width: 100%; }
+
+/* Si el menú no cabe junto al logo (pantalla angosta, zoom o letra grande), pasa a hamburguesa */
+.nav-compact .nav { display: none; }
+.nav-compact .menu-toggle { display: inline-flex; }
+.nav-compact .header-actions .pill:not(.pill-primary):not(.lang-toggle) { display: none; }
+.nav-compact.menu-open .mobile-menu { display: block; }
 
 /* --------------------------------------------------------------------------
    Portada con fondos que rotan
