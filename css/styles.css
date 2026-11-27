@@ -491,3 +491,44 @@ html:not(.anim) .timeline::after { height: 100%; }
 .jobs li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 26px 0; border-bottom: 1px solid var(--line); }
 .jobs b { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; color: var(--ink); }
 .jobs span { display: block; margin-top: 4px; color: var(--muted); font-size: .95rem; }
+
+/* --------------------------------------------------------------------------
+   Contacto
+   -------------------------------------------------------------------------- */
+.contact-sec { position: relative; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+.contact-copy h2 { font-size: clamp(2rem, 1.4rem + 2vw, 2.9rem); font-weight: 600; }
+.contact-copy > p { margin-top: 16px; font-size: 1.1rem; }
+.c-list { margin-top: 28px; display: grid; gap: 2px; }
+.c-item { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: center; padding: 14px 0; border-bottom: 1px solid rgba(10,42,79,.1); text-decoration: none; transition: transform .3s var(--ease); }
+a.c-item:hover { transform: translateX(6px); }
+a.c-item:hover span { color: var(--blue); }
+.c-item .ic { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: #fff; border: 1px solid var(--sky-line); color: var(--blue); }
+.c-item .ic svg { width: 20px; height: 20px; }
+.c-item small { display: block; font-size: .8rem; color: var(--muted); }
+.c-item span { color: var(--ink); font-weight: 500; overflow-wrap: anywhere; transition: color .2s; }
+
+.form { position: relative; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding: clamp(22px, 3vw, 34px); border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: 0 24px 60px -30px rgba(10,42,79,.35); }
+.form h3 { grid-column: 1 / -1; font-size: 1.35rem; font-weight: 600; }
+.form .full { grid-column: 1 / -1; }
+.field { display: grid; gap: 6px; align-content: start; }
+.field label { font-size: .88rem; font-weight: 500; color: var(--ink); }
+.field input, .field select, .field textarea {
+  width: 100%; font: inherit; font-size: 1rem; color: var(--ink);
+  padding: 12px 14px; min-height: 48px; border-radius: 12px; border: 1px solid #cdd6e2; background: #fff;
+  transition: border-color .2s, box-shadow .2s;
+}
+.field input[type="file"] { padding: 10px; font-size: .92rem; }
+.field textarea { resize: vertical; min-height: 116px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(5,93,167,.16); }
+.field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #c2563f; }
+.field .err { font-size: .8rem; color: #b4442f; display: none; }
+.field.invalid .err { display: block; }
+.form-foot { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.form-foot small { color: var(--muted); font-size: .82rem; max-width: 40ch; }
+.form-success { position: absolute; inset: 0; border-radius: inherit; background: #fff; display: grid; place-content: center; justify-items: center; text-align: center; gap: 14px; padding: 30px; }
+.form-success .ok-ic { width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: var(--grad); }
+.form-success .ok-ic svg { width: 28px; height: 28px; }
+.form-success h3 { font-size: 1.4rem; }
+.form-success p { color: var(--muted); max-width: 38ch; }
+.form-success .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
