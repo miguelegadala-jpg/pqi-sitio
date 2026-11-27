@@ -299,3 +299,14 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .x-card.x-pre.x-open { clip-path: inset(0 0 0 0 round 24px); }
 .x-card.x-pre .x-bg img { transform: scale(1.3); transition: transform 1.6s var(--ease); transition-delay: var(--d, 0s); }
 .x-card.x-pre.x-open .x-bg img { transform: scale(1.05); }
+
+/* --------------------------------------------------------------------------
+   Desde 1973
+   -------------------------------------------------------------------------- */
+.since-sec { padding-block: clamp(80px, 11vw, 150px); }
+.since-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 90px); align-items: start; }
+.since-num { font-family: var(--font-display); font-weight: 600; font-size: clamp(4.5rem, 2.5rem + 7vw, 9rem); line-height: .9; letter-spacing: -0.06em; }
+.since-label { margin-top: 14px; font-weight: 600; color: var(--navy); }
+.since-copy { display: grid; gap: 20px; font-size: clamp(1.1rem, 1rem + .35vw, 1.3rem); line-height: 1.6; color: var(--ink); }
+.since-copy p:not(:first-child) { color: var(--text); font-size: .92em; }
+.since-copy .btn { justify-self: start; margin-top: 8px; }
